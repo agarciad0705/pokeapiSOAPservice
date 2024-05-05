@@ -1,0 +1,113 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://connection.pokeapi.soap"
+	targetNamespace="http://connection.pokeapi.soap"
+	elementFormDefault="qualified">
+
+
+<!-- common -->
+	<xs:complexType name="pokemonInfo">
+		<xs:sequence>
+			<xs:element name="property" type="xs:string" />
+			<xs:element name="data" type="xs:string" />		
+		</xs:sequence>
+	</xs:complexType>
+	
+<!-- 	ablilities -->
+	<xs:element name="abilitiesRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="abilitiesResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 	base_experience -->
+	<xs:element name="base_experienceRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="base_experienceResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+		<!-- 	held_items -->
+	<xs:element name="held_itemsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="held_itemsResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>		
+	<!-- 	id -->
+	<xs:element name="idRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="idResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+	<!-- 	name -->
+	<xs:element name="nameRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="nameResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- 	location_area_encounters -->
+	<xs:element name="location_area_encountersRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemon" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="location_area_encountersResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="pokemonInfo" type="tns:pokemonInfo" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+
+</xs:schema>
